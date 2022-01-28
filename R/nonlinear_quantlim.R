@@ -309,7 +309,7 @@ nonlinear_quantlim = function(datain, alpha = 0.05, Npoints = 100,
     LOQ_pred <- 0
     y_LOQ_pred <- up_noise
   }
-  if(length(LOD_pred) > 1) { 
+  if(length(LOQ_pred) > 1) { 
     message("multiple intersection between fit and upper bound of noise, picking first") # MATEUSZ print -> message
     LOQ_pred <- LOQ_pred[1]
   }
